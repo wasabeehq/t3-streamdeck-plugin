@@ -7,12 +7,12 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart dev.leokun.t3code\"",
+    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart fr.wasabee.t3code\"",
     "icons": "node scripts/icons.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "validate": "streamdeck validate dev.leokun.t3code.sdPlugin",
-    "pack": "streamdeck pack dev.leokun.t3code.sdPlugin -o dist -f"
+    "validate": "streamdeck validate fr.wasabee.t3code.sdPlugin",
+    "pack": "streamdeck pack fr.wasabee.t3code.sdPlugin -o dist -f"
   },
   "dependencies": {
     "@elgato/streamdeck": "3.0.4",

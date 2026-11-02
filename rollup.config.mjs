@@ -6,7 +6,7 @@ import path from "node:path";
 import url from "node:url";
 
 const isWatching = !!process.env.ROLLUP_WATCH;
-const sdPlugin = "dev.leokun.t3code.sdPlugin";
+const sdPlugin = "fr.wasabee.t3code.sdPlugin";
 
 /** @type {import('rollup').RollupOptions} */
 export default {

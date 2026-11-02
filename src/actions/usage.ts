@@ -15,7 +15,7 @@ const COST_REFRESH_MS = 5 * 60_000;
 
 const providerQuery = (value: string | undefined) => value?.trim() || "claude";
 
-@action({ UUID: "dev.leokun.t3code.usage-gauge" })
+@action({ UUID: "fr.wasabee.t3code.usage-gauge" })
 export class UsageGaugeAction extends T3KeyAction<GaugeSettings> {
   protected readonly topics = ["config"] as const;
   protected override readonly tickMs = RESET_TICK_MS;
@@ -34,7 +34,7 @@ export class UsageGaugeAction extends T3KeyAction<GaugeSettings> {
   }
 }
 
-@action({ UUID: "dev.leokun.t3code.usage-overview" })
+@action({ UUID: "fr.wasabee.t3code.usage-overview" })
 export class UsageOverviewAction extends T3KeyAction<OverviewSettings> {
   protected readonly topics = ["config"] as const;
   protected override readonly tickMs = RESET_TICK_MS;
@@ -67,7 +67,7 @@ const COST_LABELS: Record<CostPeriod, string> = { day: "JOUR", week: "7 JOURS", 
 
 const periodOf = (settings: CostSettings): CostPeriod => (isCostPeriod(settings.period) ? settings.period : "day");
 
-@action({ UUID: "dev.leokun.t3code.usage-cost" })
+@action({ UUID: "fr.wasabee.t3code.usage-cost" })
 export class UsageCostAction extends T3KeyAction<CostSettings> {
   protected readonly topics = ["cost"] as const;
   protected override readonly tickMs = COST_REFRESH_MS;

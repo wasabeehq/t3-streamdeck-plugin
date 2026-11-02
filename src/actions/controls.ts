@@ -19,7 +19,7 @@ async function paintIcon(target: Action<ShortcutSettings>, settings: ShortcutSet
   if (target.isKey()) await target.setImage(`imgs/keys/${SHORTCUTS[commandOf(settings)].icon}@2x.png`);
 }
 
-@action({ UUID: "dev.leokun.t3code.shortcut" })
+@action({ UUID: "fr.wasabee.t3code.shortcut" })
 export class ShortcutAction extends SingletonAction<ShortcutSettings> {
   override async onWillAppear(ev: WillAppearEvent<ShortcutSettings>): Promise<void> {
     await paintIcon(ev.action, ev.payload.settings);
@@ -40,7 +40,7 @@ export class ShortcutAction extends SingletonAction<ShortcutSettings> {
   }
 }
 
-@action({ UUID: "dev.leokun.t3code.refresh" })
+@action({ UUID: "fr.wasabee.t3code.refresh" })
 export class RefreshAction extends SingletonAction {
   override async onWillAppear(ev: WillAppearEvent): Promise<void> {
     store.ensureStarted();

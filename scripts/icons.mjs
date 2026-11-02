@@ -6,7 +6,7 @@ import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const imgs = join(root, "dev.leokun.t3code.sdPlugin", "imgs");
+const imgs = join(root, "fr.wasabee.t3code.sdPlugin", "imgs");
 const CHROME = process.env.CHROME_BIN ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const work = mkdtempSync(join(process.env.ICONS_TMP ?? tmpdir(), "t3sd-icons-"));
 

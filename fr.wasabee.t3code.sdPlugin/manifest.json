@@ -2,10 +2,10 @@
   "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
   "Name": "T3 Code Controls",
   "Version": "0.1.0.0",
-  "Author": "leokun",
+  "Author": "Wasabee",
   "Description": "Unofficial community plugin: control T3 Code from your Stream Deck (thread navigation, attention, approvals, usage gauges).",
   "URL": "https://github.com/wasabeehq/t3-streamdeck-plugin",
-  "UUID": "dev.leokun.t3code",
+  "UUID": "fr.wasabee.t3code",
   "SDKVersion": 3,
   "Category": "T3 Code Controls",
   "CategoryIcon": "imgs/plugin/category-icon",
@@ -27,7 +27,7 @@
   "Actions": [
     {
       "Name": "Raccourci T3",
-      "UUID": "dev.leokun.t3code.shortcut",
+      "UUID": "fr.wasabee.t3code.shortcut",
       "Icon": "imgs/actions/shortcut/icon",
       "Tooltip": "Activate T3 Code and press one of its keyboard shortcuts",
       "PropertyInspectorPath": "ui/shortcut.html",
@@ -43,7 +43,7 @@
     },
     {
       "Name": "Premier en attente",
-      "UUID": "dev.leokun.t3code.first-waiting",
+      "UUID": "fr.wasabee.t3code.first-waiting",
       "Icon": "imgs/actions/first-waiting/icon",
       "Tooltip": "Shows how many threads wait for you; press opens the oldest one",
       "PropertyInspectorPath": "ui/connection.html",
@@ -59,7 +59,7 @@
     },
     {
       "Name": "Approuver",
-      "UUID": "dev.leokun.t3code.approve",
+      "UUID": "fr.wasabee.t3code.approve",
       "Icon": "imgs/actions/approve/icon",
       "Tooltip": "Press opens the oldest pending approval, long press approves it",
       "PropertyInspectorPath": "ui/connection.html",
@@ -75,7 +75,7 @@
     },
     {
       "Name": "Stop",
-      "UUID": "dev.leokun.t3code.stop",
+      "UUID": "fr.wasabee.t3code.stop",
       "Icon": "imgs/actions/stop/icon",
       "Tooltip": "Stops the running thread when exactly one is running",
       "PropertyInspectorPath": "ui/connection.html",
@@ -91,7 +91,7 @@
     },
     {
       "Name": "Jauge d'usage",
-      "UUID": "dev.leokun.t3code.usage-gauge",
+      "UUID": "fr.wasabee.t3code.usage-gauge",
       "Icon": "imgs/actions/usage-gauge/icon",
       "Tooltip": "One provider usage window as a gauge",
       "PropertyInspectorPath": "ui/usage-gauge.html",
@@ -107,7 +107,7 @@
     },
     {
       "Name": "Usages (aperçu)",
-      "UUID": "dev.leokun.t3code.usage-overview",
+      "UUID": "fr.wasabee.t3code.usage-overview",
       "Icon": "imgs/actions/usage-overview/icon",
       "Tooltip": "Session gauge with a weekly bar; press opens the usage page",
       "PropertyInspectorPath": "ui/usage-overview.html",
@@ -123,7 +123,7 @@
     },
     {
       "Name": "Coût",
-      "UUID": "dev.leokun.t3code.usage-cost",
+      "UUID": "fr.wasabee.t3code.usage-cost",
       "Icon": "imgs/actions/usage-cost/icon",
       "Tooltip": "Cost for today, this week or this month",
       "PropertyInspectorPath": "ui/usage-cost.html",
@@ -139,7 +139,7 @@
     },
     {
       "Name": "Actualiser les usages",
-      "UUID": "dev.leokun.t3code.refresh",
+      "UUID": "fr.wasabee.t3code.refresh",
       "Icon": "imgs/actions/refresh/icon",
       "Tooltip": "Forces a refresh of the provider usage limits",
       "PropertyInspectorPath": "ui/connection.html",

@@ -22,7 +22,7 @@ Unofficial community plugin that controls [T3 Code](https://t3.codes) from an El
 ```sh
 npm i
 npm run build
-npx streamdeck link dev.leokun.t3code.sdPlugin
+npx streamdeck link fr.wasabee.t3code.sdPlugin
 ```
 
 Requires Stream Deck 7.1+ and macOS 12+. Use `npm run icons` to regenerate the images (needs Google Chrome) and `npm test` for the unit tests.

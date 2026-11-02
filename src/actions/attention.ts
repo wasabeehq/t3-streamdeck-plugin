@@ -21,7 +21,7 @@ async function openThread(thread: ThreadShell): Promise<boolean> {
   return true;
 }
 
-@action({ UUID: "dev.leokun.t3code.first-waiting" })
+@action({ UUID: "fr.wasabee.t3code.first-waiting" })
 export class FirstWaitingAction extends T3KeyAction {
   protected readonly topics = ["threads"] as const;
 
@@ -35,7 +35,7 @@ export class FirstWaitingAction extends T3KeyAction {
   }
 }
 
-@action({ UUID: "dev.leokun.t3code.approve" })
+@action({ UUID: "fr.wasabee.t3code.approve" })
 export class ApproveAction extends T3KeyAction {
   protected readonly topics = ["threads"] as const;
   private readonly downAt = new Map<string, number>();
@@ -74,7 +74,7 @@ export class ApproveAction extends T3KeyAction {
   }
 }
 
-@action({ UUID: "dev.leokun.t3code.stop" })
+@action({ UUID: "fr.wasabee.t3code.stop" })
 export class StopAction extends T3KeyAction {
   protected readonly topics = ["threads", "config"] as const;
 
