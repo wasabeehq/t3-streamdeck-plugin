@@ -1,0 +1,35 @@
+{
+  "name": "t3-streamdeck-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Stream Deck actions for T3 Code: thread navigation, attention, usage gauges.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart dev.leokun.t3code\"",
+    "icons": "node scripts/icons.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate": "streamdeck validate dev.leokun.t3code.sdPlugin",
+    "pack": "streamdeck pack dev.leokun.t3code.sdPlugin -o dist -f"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "3.0.4",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@elgato/cli": "1.10.4",
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.2",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "~24.1.0",
+    "@types/ws": "^8.5.12",
+    "rollup": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^3.2.0"
+  }
+}

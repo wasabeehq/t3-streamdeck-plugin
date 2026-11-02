@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Usage cost</title>
+  <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+  <sdpi-item label="Period">
+    <sdpi-select setting="period" default="day">
+      <option value="day">Aujourd'hui</option>
+      <option value="week">Semaine</option>
+      <option value="month">Mois</option>
+    </sdpi-select>
+  </sdpi-item>
+  <sdpi-details heading="Connection" open>
+    <sdpi-item label="Token">
+      <sdpi-password global setting="token"></sdpi-password>
+    </sdpi-item>
+    <sdpi-item label="Server URL">
+      <sdpi-textfield global setting="serverUrl" placeholder="auto"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="App bundle ID">
+      <sdpi-textfield global setting="appBundleId" placeholder="com.t3tools.t3code"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Help">
+      <details>
+        <summary>How to get a token</summary>
+        <p>Run <code>t3 auth session issue --token-only --scope orchestration:read --scope orchestration:operate --scope diagnostics:read</code> and paste the output. Leave the server URL empty to auto-discover the local server.</p>
+      </details>
+    </sdpi-item>
+  </sdpi-details>
+</body>
+</html>

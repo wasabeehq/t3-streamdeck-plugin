@@ -1,0 +1,157 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "T3 Code Controls",
+  "Version": "0.1.0.0",
+  "Author": "leokun",
+  "Description": "Unofficial community plugin: control T3 Code from your Stream Deck (thread navigation, attention, approvals, usage gauges).",
+  "URL": "https://github.com/leokun/t3-streamdeck-plugin",
+  "UUID": "dev.leokun.t3code",
+  "SDKVersion": 3,
+  "Category": "T3 Code Controls",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "Icon": "imgs/plugin/marketplace",
+  "CodePath": "bin/plugin.js",
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "enabled"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "Actions": [
+    {
+      "Name": "Raccourci T3",
+      "UUID": "dev.leokun.t3code.shortcut",
+      "Icon": "imgs/actions/shortcut/icon",
+      "Tooltip": "Activate T3 Code and press one of its keyboard shortcuts",
+      "PropertyInspectorPath": "ui/shortcut.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/sujet-precedent",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Premier en attente",
+      "UUID": "dev.leokun.t3code.first-waiting",
+      "Icon": "imgs/actions/first-waiting/icon",
+      "Tooltip": "Shows how many threads wait for you; press opens the oldest one",
+      "PropertyInspectorPath": "ui/connection.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/premier-en-attente",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Approuver",
+      "UUID": "dev.leokun.t3code.approve",
+      "Icon": "imgs/actions/approve/icon",
+      "Tooltip": "Press opens the oldest pending approval, long press approves it",
+      "PropertyInspectorPath": "ui/connection.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/approuver",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Stop",
+      "UUID": "dev.leokun.t3code.stop",
+      "Icon": "imgs/actions/stop/icon",
+      "Tooltip": "Stops the running thread when exactly one is running",
+      "PropertyInspectorPath": "ui/connection.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/stop",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Jauge d'usage",
+      "UUID": "dev.leokun.t3code.usage-gauge",
+      "Icon": "imgs/actions/usage-gauge/icon",
+      "Tooltip": "One provider usage window as a gauge",
+      "PropertyInspectorPath": "ui/usage-gauge.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/usages",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Usages (aperçu)",
+      "UUID": "dev.leokun.t3code.usage-overview",
+      "Icon": "imgs/actions/usage-overview/icon",
+      "Tooltip": "Session gauge with a weekly bar; press opens the usage page",
+      "PropertyInspectorPath": "ui/usage-overview.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/usages",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Coût",
+      "UUID": "dev.leokun.t3code.usage-cost",
+      "Icon": "imgs/actions/usage-cost/icon",
+      "Tooltip": "Cost for today, this week or this month",
+      "PropertyInspectorPath": "ui/usage-cost.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/vue-cout",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Actualiser les usages",
+      "UUID": "dev.leokun.t3code.refresh",
+      "Icon": "imgs/actions/refresh/icon",
+      "Tooltip": "Forces a refresh of the provider usage limits",
+      "PropertyInspectorPath": "ui/connection.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/keys/actualiser",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ]
+}
