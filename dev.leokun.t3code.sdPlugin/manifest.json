@@ -4,7 +4,7 @@
   "Version": "0.1.0.0",
   "Author": "leokun",
   "Description": "Unofficial community plugin: control T3 Code from your Stream Deck (thread navigation, attention, approvals, usage gauges).",
-  "URL": "https://github.com/leokun/t3-streamdeck-plugin",
+  "URL": "https://github.com/wasabeehq/t3-streamdeck-plugin",
   "UUID": "dev.leokun.t3code",
   "SDKVersion": 3,
   "Category": "T3 Code Controls",
